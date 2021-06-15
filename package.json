@@ -17,6 +17,7 @@
     "link-all": "yarn unlink-all && lerna exec --parallel yarn link",
     "lint": "eslint \"packages/**/src/**/*.{js,jsx,ts,tsx}\"",
     "postversionup": "yarn commit-version && git push",
+"prepare": "yarn build",
     "prebuild": "yarn clean",
     "prerelease": "yarn build && yarn test && yarn lint",
     "release:publish:latext": "lerna publish --force-publish",
